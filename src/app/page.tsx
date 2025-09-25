@@ -9,7 +9,7 @@ import FormAction from "./exos/formAction";
 import UseOptimistic from "./exos/useOptimistic";
 import WithoutForwardRef from "./exos/withoutForwardRef";
 import { highlightToHast } from "./utils/highlight";
-import PreWarmingSuspense from "./exos/PreWarmingSuspense";
+import PreWarmingSuspense from "./exos/preWarmingSuspense";
 
 async function getSource(src: string) {
   const file = path.join(process.cwd(), "/src/app", src);
