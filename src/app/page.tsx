@@ -10,6 +10,7 @@ import UseOptimistic from "./exos/useOptimistic";
 import WithoutForwardRef from "./exos/withoutForwardRef";
 import { highlightToHast } from "./utils/highlight";
 import PreWarmingSuspense from "./exos/preWarmingSuspense";
+import ErrorReporting from "./exos/errorReporting";
 
 async function getSource(src: string) {
   const file = path.join(process.cwd(), "/src/app", src);
@@ -54,6 +55,11 @@ export default async function Home() {
       title: "Pre-warming Suspense",
       src: "exos/preWarmingSuspense.tsx",
       component: <PreWarmingSuspense />,
+    },
+    {
+      title: "Error reporting with ErrorBoundary",
+      src: "exos/errorReporting.tsx",
+      component: <ErrorReporting />,
     },
   ];
 
